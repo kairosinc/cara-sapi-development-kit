@@ -1,0 +1,3 @@
+parameters:
+    baseUrl: http://api.imrsv.com
+    baseRelativePath: /app_dev.php

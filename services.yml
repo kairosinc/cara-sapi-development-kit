@@ -1,0 +1,21 @@
+services:
+    analytics_api_service:
+        class: ImmersiveLabs\CaraAPI\Service\API\AnalyticsAPIService
+        calls:
+            - ["setBaseUrl", [%baseUrl%]]
+            - ["setBaseRelativePath", [%baseRelativePath%]]
+    auth_api_service:
+        class: ImmersiveLabs\CaraAPI\Service\API\AuthAPIService
+        calls:
+            - ["setBaseUrl", [%baseUrl%]]
+            - ["setBaseRelativePath", [%baseRelativePath%]]
+    camera_api_service:
+        class: ImmersiveLabs\CaraAPI\Service\API\CameraAPIService
+        calls:
+            - ["setBaseUrl", [%baseUrl%]]
+            - ["setBaseRelativePath", [%baseRelativePath%]]
+    user_api_service:
+        class: ImmersiveLabs\CaraAPI\Service\API\UserAPIService
+        calls:
+            - ["setBaseUrl", [%baseUrl%]]
+            - ["setBaseRelativePath", [%baseRelativePath%]]

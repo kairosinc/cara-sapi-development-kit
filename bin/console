@@ -1,0 +1,25 @@
+#!/usr/bin/env php
+<?php
+require_once __DIR__.'/../vendor/autoload.php';
+
+use ImmersiveLabs\CaraAPI\Command\Analytics\GetRawCommand;
+//use ImmersiveLabs\CaraAPI\Command\Analytics\GetAveragesCommand;
+//use ImmersiveLabs\CaraAPI\Command\Analytics\GetTotalsCommand;
+use ImmersiveLabs\CaraAPI\Command\Camera\GetAllCommand;
+use ImmersiveLabs\CaraAPI\Command\Camera\GetByKeyCommand;
+use ImmersiveLabs\CaraAPI\Command\Camera\UpdateCommand;
+use ImmersiveLabs\CaraAPI\Command\User\GetInfoCommand;
+use ImmersiveLabs\CaraAPI\Command\User\GetAccessTokenCommand;
+
+use Symfony\Component\Console\Application;
+
+$app = new Application();
+$app->add(new GetRawCommand());
+//$app->add(new GetAveragesCommand());
+//$app->add(new GetTotalsCommand());
+$app->add(new GetAllCommand());
+$app->add(new GetByKeyCommand());
+$app->add(new UpdateCommand());
+$app->add(new GetInfoCommand());
+$app->add(new GetAccessTokenCommand());
+$app->run();

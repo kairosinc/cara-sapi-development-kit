@@ -1,0 +1,39 @@
+{
+    "name": "il/sapi-devkit",
+    "description": "Sapi CARA System Devkit",
+    "autoload": {
+        "psr-0": { "": "src/" }
+    },
+    "require": {
+        "php": ">=5.3.3",
+        "guzzle/guzzle": "3.0.5",
+        "incenteev/composer-parameter-handler": "*",
+        "raulfraile/ladybug": "dev-master",
+        "twitter/bootstrap": "2.2.2",
+        "sensiolabs/security-checker": "dev-master",
+        "symfony/console": "2.*",
+        "symfony/yaml": "2.*",
+        "symfony/dependency-injection": "2.3.*",
+        "symfony/config": "2.3.*"
+    },
+    "scripts": {
+        "post-install-cmd": [
+            "bin/security-checker security:check",
+            "Incenteev\\ParameterHandler\\ScriptHandler::buildParameters"
+        ],
+        "post-update-cmd": [
+            "bin/security-checker security:check",
+            "Incenteev\\ParameterHandler\\ScriptHandler::buildParameters"
+        ]
+    },
+    "config": {
+        "bin-dir": "bin"
+    },
+    "minimum-stability": "dev",
+    "extra": {
+        "incenteev-parameters": {
+            "file": "config.yml"
+        }
+    }
+}
+
