@@ -1,5 +1,5 @@
 {
-    "name": "il/sapi-devkit",
+    "name": "immersivelabs/cara-sapi-development-kit",
     "description": "Sapi CARA System Devkit",
     "autoload": {
         "psr-0": { "": "src/" }
