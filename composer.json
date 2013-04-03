@@ -12,8 +12,7 @@
         "twitter/bootstrap": "2.2.2",
         "sensiolabs/security-checker": "dev-master",
         "symfony/console": "2.*",
-        "symfony/yaml": "2.*",
-        "symfony/config": "2.3.*"
+        "symfony/yaml": "2.*"
     },
     "scripts": {
         "post-install-cmd": [
