@@ -1,18 +1,18 @@
 Start Here
 ==========
 
-CARA Developer's Kit is a complete Symfony2 component PHP project with tools, libraries, documentation and console
-utilities to make it easy for any developer, tinkerer or innovator to start building amazing products using CARA.
-CARA technology is powerful, but it isn't just for PhD's. CARA was created for the everyday inventor and innovator
+Cara Developer's Kit is a complete Symfony2 component PHP project with tools, libraries, documentation and console
+utilities to make it easy for any developer, tinkerer or innovator to start building amazing products using Cara.
+Cara technology is powerful, but it isn't just for PhD's. Cara was created for the everyday inventor and innovator
 that wants to make something amazing. Our approach is in taking complex algorithms and technology locked away in
-research universities and making it universally accessible to everyone. The CARA Developer's Kit is easy to use and
+research universities and making it universally accessible to everyone. The Cara Developer's Kit is easy to use and
 is a one stop you can hook it directly into your existing PHP application.
 
 
 Installation Instructions
 =========================
 
-Step 1. - Install CARA Developer's Kit
+Step 1. - Install Cara Developer's Kit
 
     ~ Open Terminal Application
     ~ git clone https://github.com/immersivelabs/sapi-devkit.git
